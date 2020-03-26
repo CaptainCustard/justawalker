@@ -1,2 +1,1 @@
-# justawalker
-Personal website
+# Personal Website
