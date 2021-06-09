@@ -23,7 +23,6 @@ const AntiochRoute: React.FC<AntiochRoute> = props => {
 };
 
 export const routes = {
-	antioch: "/antioch",
     home: "/",
 };
 
@@ -33,8 +32,7 @@ export const AntiochRouter: React.FC = () => {
             <Fragment>
                 <ScrollToTop/>
                 <Switch>
-					<AntiochRoute path={routes.antioch} title="Antioch" component={AntiochPage}/>
-                    <AntiochRoute path={routes.home} title="Home" component={() => <h2>See? There's nothing here! Now go away!</h2>} />
+					<AntiochRoute path={routes.home} title="Antioch" component={AntiochPage}/>
                 </Switch>
             </Fragment>
         </BrowserRouter>

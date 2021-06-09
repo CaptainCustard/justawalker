@@ -4,7 +4,7 @@
 	"private": true,
 	"scripts": {
 		"start": "webpack-dev-server --config webpack.serve.js --hot --open",
-		"build": "webpack --mode production && xcopy /s /y dist .."
+		"build": "webpack --mode production && del \"../*\" -include \"bundle.*.js\" && xcopy /s /y dist .."
 	},
 	"dependencies": {
 		"@babel/runtime": "^7.10.5",
